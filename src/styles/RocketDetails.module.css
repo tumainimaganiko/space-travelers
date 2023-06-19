@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin: 0 6%;
+}
+
+.img {
+  width: 400px;
+  height: 200px;
+  margin: 20px 30px;
+}
+
+.details {
+  padding-top: 10px;
+}
+
+.details button {
+  padding: 10px 15px;
+  background-color: #088df3;
+  border: transparent;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+}
