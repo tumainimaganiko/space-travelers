@@ -4,11 +4,13 @@ import styles from '../styles/RocketDetails.module.css';
 
 const RocketDetails = ({ name, description, image }) => (
   <div className={styles.container}>
+    <div>
     <img
       src={image}
       className={styles.img}
       alt=""
     />
+    </div>
     <div className={styles.details}>
       <h2>{name}</h2>
       <p>{description}</p>

@@ -3,10 +3,12 @@
   margin: 0 6%;
 }
 
+.container div:nth-child(1){
+  margin: 20px 30px;
+}
+
 .img {
   width: 400px;
-  height: 200px;
-  margin: 20px 30px;
 }
 
 .details {
