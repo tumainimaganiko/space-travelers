@@ -1,0 +1,25 @@
+.missionContainer {
+  padding: 0 40px;
+}
+
+table {
+  border: 2px solid gray;
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: Top;
+  padding: 5px;
+}
