@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../styles/RocketDetails.module.css';
 
 const RocketDetails = ({ name, description, image }) => (
@@ -17,3 +18,9 @@ const RocketDetails = ({ name, description, image }) => (
 );
 
 export default RocketDetails;
+
+RocketDetails.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
