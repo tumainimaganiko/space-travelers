@@ -10,7 +10,7 @@ const Layout = () => (
     <Navbar />
     <Outlet />
   </>
-)
+);
 function App() {
   return (
     <Routes>
