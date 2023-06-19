@@ -6,7 +6,7 @@ const RocketDetails = ({ name, description, image }) => (
   <div className={styles.container}>
     <div>
       <img
-        src={image}
+        src={image[0]}
         className={styles.img}
         alt=""
       />
