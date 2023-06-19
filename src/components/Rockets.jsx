@@ -1,4 +1,4 @@
-import RocketDetails from "./RocketDetails";
+import RocketDetails from './RocketDetails';
 
 const Rockets = () => (
   <div>
