@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.list li {
+  padding: 10px;
+}
