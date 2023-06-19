@@ -1,6 +1,8 @@
 .container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin: 1% 4%;
 }
 
 .heading {
