@@ -17,9 +17,28 @@
 
 .details button {
   padding: 10px 15px;
-  background-color: #088df3;
-  border: transparent;
   border-radius: 6px;
-  color: #fff;
   font-size: 18px;
+}
+
+.reservedButton {
+  border: transparent;
+  background-color: #088df3;
+  color: #fff;
+}
+
+.details span {
+  background-color: #1aa1b9;
+  color: #fff;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 0 4px;
+  font-size: small;
+}
+
+.cancelledButton {
+  background-color: #fff;
+  color: gray;
+  border: 1px solid gray;
 }
