@@ -1,11 +1,12 @@
 .container {
-    width: 40%;
+  width: 40%;
 }
+
 .container ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container ul li {
-    border: 1px solid black;
-    padding: 10px 15px;
+  border: 1px solid black;
+  padding: 10px 15px;
 }
