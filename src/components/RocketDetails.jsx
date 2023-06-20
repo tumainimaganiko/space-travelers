@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import styles from '../styles/RocketDetails.module.css';
@@ -9,17 +8,13 @@ const RocketDetails = ({
 }) => {
   const dispatch = useDispatch();
 
-  const [text, setText] = useState('');
-
   const handleBooking = (e) => {
     e.preventDefault();
     dispatch(bookRocket(id));
-    setText('reserved');
   };
   const handleCancelingBooking = (e) => {
     e.preventDefault();
     dispatch(cancelRocket(id));
-    setText('');
   };
 
   return (
@@ -34,7 +29,7 @@ const RocketDetails = ({
       <div className={styles.details}>
         <h2>{name}</h2>
         <p>
-          {reserved && <span>{text}</span>}
+          {reserved && <span>reserved</span>}
           {description}
         </p>
         {!reserved && <button type="button" className={styles.reservedButton} onClick={handleBooking}>Reserve Rocket</button>}
