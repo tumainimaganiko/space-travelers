@@ -39,6 +39,6 @@ const rocketsSlice = createSlice({
   },
 });
 
-export const { bookRocket } = rocketsSlice.actions;
+export const { bookRocket, cancelRocket } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
