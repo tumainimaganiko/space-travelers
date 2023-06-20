@@ -4,11 +4,12 @@ const MyProfile = () => {
   const { rockets } = useSelector((store) => store.rockets);
   const bookedRockets = rockets.filter((rocket) => rocket.reserved);
   return (
-    <ul>
+    <table>
+      <th>Rockets</th>
       {bookedRockets.map((rocket) => (
-        <li key={rocket.id}>{rocket.name}</li>
+        <tr key={rocket.id}>{rocket.name}</tr>
       ))}
-    </ul>
+    </table>
   );
 };
 
