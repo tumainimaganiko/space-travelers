@@ -26,3 +26,19 @@
   background-color: #088df3;
   color: #fff;
 }
+
+.details span {
+  background-color: #1AA1B9;
+  color: #fff;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 0 4px;
+  font-size: small;
+}
+
+.cancelledButton {
+  background-color: #fff;
+  color: gray;
+  border: 1px solid gray;
+}
