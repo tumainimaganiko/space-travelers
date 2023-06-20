@@ -23,8 +23,12 @@ const missionsSlice = createSlice({
         return { ...mission, reserved: true };
       });
     },
-
-   
+    leaveMission: (state, action) => {
+      state.missions = state.missions.map((mission) => {
+        if (mission.mission_id !== action.payload) return mission;
+        return { ...mission, reserved: false };
+      });
+    },
   },
   extraReducers: (builders) => {
     builders.addCase(fetchMissions.fulfilled, (state, action) => {
