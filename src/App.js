@@ -1,9 +1,12 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Navbar from './components/Navbar';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
+import { fetchRockets } from './redux/rockets/rocketsSlice';
 
 const Layout = () => (
   <>
@@ -12,6 +15,10 @@ const Layout = () => (
   </>
 );
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
