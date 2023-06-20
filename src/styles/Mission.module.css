@@ -23,3 +23,18 @@ td {
   vertical-align: top;
   padding: 5px;
 }
+
+.joinBtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(24, 20, 20);
+  width: 120px;
+  padding: 5px;
+}
+
+.leaveBtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(197, 34, 34);
+  color: red;
+  width: 120px;
+  padding: 5px;
+}

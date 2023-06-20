@@ -1,24 +1,16 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import MissionDetails from './MissionDetails';
-import { fetchMissions } from '../redux/missions/missionsSlice';
 
 const Missions = () => {
-  const dispatch = useDispatch();
   const { missions } = useSelector((store) => store.missions);
-
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
-
   return (
     <table>
       <thead>
         <tr>
-        <th>Mission</th>
-         <th>Description</th>
+          <th>Mission</th>
+          <th>Description</th>
           <th>Status</th>
-      </tr>
+        </tr>
       </thead>
       {missions.map((mission) => (
         <MissionDetails

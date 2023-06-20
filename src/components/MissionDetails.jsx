@@ -13,6 +13,7 @@ const MissionDetails = ({
   const handleJoin = (e) => {
     e.preventDefault();
     dispatch(joinMission(id));
+
     if (!reserved) {
       setText('Active Member');
     }
@@ -30,12 +31,16 @@ const MissionDetails = ({
         <td className={styles.name}>{name}</td>
         <td className={styles.description}>{description}</td>
         <td>
-          <span>{text}</span>
+          <span style={{ backgroundColor: reserved ? '#1580dd' : 'gray', color: 'white', width: '200px', border: '1px solid gray' }}>
+            {' '}
+            {text}
+          </span>
         </td>
         <td>
           {!reserved && (
             <button
               type="button"
+              className={styles.joinBtn}
               onClick={handleJoin}
             >
               Join Mission
@@ -44,6 +49,7 @@ const MissionDetails = ({
           {reserved && (
             <button
               type="button"
+              className={styles.leaveBtn}
               onClick={handleLeave}
             >
               Leave Mission
@@ -52,7 +58,6 @@ const MissionDetails = ({
         </td>
       </tr>
     </tbody>
-    
   );
 };
 
