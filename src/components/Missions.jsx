@@ -5,7 +5,7 @@ import { fetchMissions } from '../redux/missions/missionsSlice';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const { missions } = useSelector((store) => store.mission);
+  const { missions } = useSelector((store) => store.missions);
 
   useEffect(() => {
     dispatch(fetchMissions());
@@ -18,6 +18,8 @@ const Missions = () => {
           key={mission.mission_id}
           name={mission.mission_name}
           description={mission.description}
+          id={mission.mission_id}
+          reserved={mission.reserved}
         />
       ))}
     </table>
