@@ -1,25 +1,27 @@
-import { useDispatch } from "react-redux";
-import { useState } from "react";
-import PropTypes from "prop-types";
-import styles from "../styles/Mission.module.css";
-import { joinMission, leaveMission } from "../redux/missions/missionsSlice";
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from '../styles/Mission.module.css';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 
-const MissionDetails = ({ name, description, id, reserved }) => {
+const MissionDetails = ({
+  name, description, id, reserved,
+}) => {
   const dispatch = useDispatch();
-  const [text, setText] = useState("Not a Member");
+  const [text, setText] = useState('Not a Member');
 
   const handleJoin = (e) => {
     e.preventDefault();
     dispatch(joinMission(id));
     if (!reserved) {
-      setText("Active Member");
+      setText('Active Member');
     }
   };
   const handleLeave = (e) => {
     e.preventDefault();
     dispatch(leaveMission(id));
     if (reserved) {
-      setText("Not a member");
+      setText('Not a member');
     }
   };
   return (
@@ -34,14 +36,16 @@ const MissionDetails = ({ name, description, id, reserved }) => {
           {!reserved && (
             <button
               type="button"
-              onClick={handleJoin}>
+              onClick={handleJoin}
+            >
               Join Mission
             </button>
           )}
           {reserved && (
             <button
               type="button"
-              onClick={handleLeave}>
+              onClick={handleLeave}
+            >
               Leave Mission
             </button>
           )}
