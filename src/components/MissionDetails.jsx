@@ -52,6 +52,7 @@ const MissionDetails = ({
         </td>
       </tr>
     </tbody>
+    
   );
 };
 

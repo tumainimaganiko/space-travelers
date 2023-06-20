@@ -13,6 +13,13 @@ const Missions = () => {
 
   return (
     <table>
+      <thead>
+        <tr>
+        <th>Mission</th>
+         <th>Description</th>
+          <th>Status</th>
+      </tr>
+      </thead>
       {missions.map((mission) => (
         <MissionDetails
           key={mission.mission_id}
