@@ -17,9 +17,12 @@
 
 .details button {
   padding: 10px 15px;
-  background-color: #088df3;
-  border: transparent;
   border-radius: 6px;
-  color: #fff;
   font-size: 18px;
+}
+
+.reservedButton {
+  border: transparent;
+  background-color: #088df3;
+  color: #fff;
 }
