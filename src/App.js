@@ -21,7 +21,7 @@ function App() {
     dispatch(fetchMissions());
     dispatch(fetchRockets());
   }, [dispatch]);
-  
+
   return (
     <Routes>
       <Route
