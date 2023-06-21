@@ -36,3 +36,22 @@ td {
   width: 120px;
   padding: 5px;
 }
+
+.profileTable {
+  border-collapse: collapse;
+  padding: 5px;
+  width: 300px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.profileTable th {
+  font-size: 25px;
+}
+
+.profileRow {
+  display: block;
+  padding: 5px;
+  border: 0.1px solid rgb(207, 191, 191);
+  font-size: 16px;
+}

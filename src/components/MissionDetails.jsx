@@ -17,9 +17,7 @@ const MissionDetails = ({
     alignSelf: 'center',
   };
   const styleRow = {
-    backgroundColor: reserved ? 'white'
-      : '#E5E4E2',
-
+    backgroundColor: reserved ? 'white' : '#E5E4E2',
   };
 
   //
