@@ -7,12 +7,28 @@ import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 const MissionDetails = ({
   name, description, id, reserved,
 }) => {
+  // Styling
+  const myStatus = {
+    backgroundColor: reserved ? '#379cf6' : '#36454F',
+    display: 'block',
+    width: '120px',
+    border: '1px solid gray',
+    color: 'white',
+    alignSelf: 'center',
+  };
+  const styleRow = {
+    backgroundColor: reserved ? 'white' : '#E5E4E2',
+  };
+
+  //
+
   const dispatch = useDispatch();
   const [text, setText] = useState('Not a Member');
 
   const handleJoin = (e) => {
     e.preventDefault();
     dispatch(joinMission(id));
+
     if (!reserved) {
       setText('Active Member');
     }
@@ -24,18 +40,23 @@ const MissionDetails = ({
       setText('Not a member');
     }
   };
+
   return (
     <tbody>
-      <tr>
+      <tr style={styleRow}>
         <td className={styles.name}>{name}</td>
         <td className={styles.description}>{description}</td>
         <td>
-          <span>{text}</span>
+          <span style={myStatus}>
+            {' '}
+            {text}
+          </span>
         </td>
         <td>
           {!reserved && (
             <button
               type="button"
+              className={styles.joinBtn}
               onClick={handleJoin}
             >
               Join Mission
@@ -44,6 +65,7 @@ const MissionDetails = ({
           {reserved && (
             <button
               type="button"
+              className={styles.leaveBtn}
               onClick={handleLeave}
             >
               Leave Mission

@@ -2,11 +2,9 @@
   padding: 0 40px;
 }
 
-table {
+.missionTable {
   border: 2px solid gray;
-  margin: 10px;
-  width: 100%;
-  height: 300px;
+  margin: 30px;
   border-collapse: collapse;
 }
 
@@ -22,4 +20,37 @@ td {
   text-align: left;
   vertical-align: top;
   padding: 5px;
+}
+
+.joinBtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(24, 20, 20);
+  width: 120px;
+  padding: 5px;
+}
+
+.leaveBtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(197, 34, 34);
+  color: red;
+  width: 120px;
+  padding: 5px;
+}
+
+.profileTable {
+  border-collapse: collapse;
+  width: 400px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.profileTable th {
+  font-size: 25px;
+}
+
+.profileRow {
+  display: block;
+  padding: 25px;
+  border: 0.1px solid rgb(207, 191, 191);
+  font-size: 16px;
 }
