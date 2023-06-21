@@ -40,7 +40,7 @@ td {
 .profileTable {
   border-collapse: collapse;
   padding: 5px;
-  width: 300px;
+  width: 400px;
   padding: 5px;
   margin: 20px;
 }
@@ -51,7 +51,7 @@ td {
 
 .profileRow {
   display: block;
-  padding: 5px;
+  padding: 25px;
   border: 0.1px solid rgb(207, 191, 191);
   font-size: 16px;
 }
