@@ -14,9 +14,14 @@ const MissionDetails = ({
     width: '120px',
     border: '1px solid gray',
     color: 'white',
+    alignSelf: 'center',
   };
-  const styleRow = { 
-    backgroundColor: reserved ? 'white' : 'gray'};
+  const styleRow = {
+    backgroundColor: reserved ? 'white'
+      : '#E5E4E2',
+
+  };
+
   //
 
   const dispatch = useDispatch();

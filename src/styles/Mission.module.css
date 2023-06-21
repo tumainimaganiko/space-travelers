@@ -2,11 +2,9 @@
   padding: 0 40px;
 }
 
-table {
+.missionTable {
   border: 2px solid gray;
-  margin: 10px;
-  width: 100%;
-  height: 300px;
+  margin: 30px;
   border-collapse: collapse;
 }
 

@@ -1,10 +1,11 @@
 import { useSelector } from 'react-redux';
 import MissionDetails from './MissionDetails';
+import Styles from '../styles/Mission.module.css';
 
 const Missions = () => {
   const { missions } = useSelector((store) => store.missions);
   return (
-    <table>
+    <table className={Styles.missionTable}>
       <thead>
         <tr>
           <th>Mission</th>
