@@ -9,23 +9,18 @@ const MyProfile = () => {
   const bookedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <>
-      <table className={Styles.profileTable}>
-        <thead>
-          <th>My Missions</th>
-        </thead>
-        <tbody>
+    <div className={styles.container}>
+      <div>
+        <h2>My Missions</h2>
+        <ul>
           {bookedMission.map((mission) => (
-            <tr
-              key={mission.mission_id}
-              className={Styles.profileRow}
-            >
+            <li key={mission.mission_id} className={Styles.profileRow}>
               {mission.mission_name}
-            </tr>
+            </li>
           ))}
-        </tbody>
-      </table>
-      <div className={styles.container}>
+        </ul>
+      </div>
+      <div>
         <h2>My Rockets</h2>
         <ul>
           {bookedRockets.map((rocket) => (
@@ -33,7 +28,7 @@ const MyProfile = () => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
