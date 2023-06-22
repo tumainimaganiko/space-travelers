@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Rocket details 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <img
+      alt=""
+      className="img"
+      src={
+        Array [
+          "image1",
+          "image2",
+        ]
+      }
+    />
+  </div>
+  <div
+    className="details"
+  >
+    <h2>
+      space 1
+    </h2>
+    <p>
+      <span>
+        reserved
+      </span>
+      first space
+    </p>
+    <button
+      className="cancelledButton"
+      onClick={[Function]}
+      type="button"
+    >
+      Cancel Reservation
+    </button>
+  </div>
+</div>
+`;
