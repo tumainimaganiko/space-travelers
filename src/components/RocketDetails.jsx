@@ -1,9 +1,11 @@
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import styles from "../styles/RocketDetails.module.css";
-import { bookRocket, cancelRocket } from "../redux/rockets/rocketsSlice";
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import styles from '../styles/RocketDetails.module.css';
+import { bookRocket, cancelRocket } from '../redux/rockets/rocketsSlice';
 
-const RocketDetails = ({ name, description, image, id, reserved }) => {
+const RocketDetails = ({
+  name, description, image, id, reserved,
+}) => {
   const dispatch = useDispatch();
 
   return (

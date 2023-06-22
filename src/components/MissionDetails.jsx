@@ -1,38 +1,40 @@
-import { useDispatch } from "react-redux";
-import { useState } from "react";
-import PropTypes from "prop-types";
-import styles from "../styles/Mission.module.css";
-import { joinMission, leaveMission } from "../redux/missions/missionsSlice";
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from '../styles/Mission.module.css';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 
-const MissionDetails = ({ name, description, id, reserved }) => {
+const MissionDetails = ({
+  name, description, id, reserved,
+}) => {
   const myStatus = {
-    backgroundColor: reserved ? "#379cf6" : "#36454F",
-    display: "block",
-    width: "120px",
-    border: "1px solid gray",
-    color: "white",
-    alignSelf: "center",
+    backgroundColor: reserved ? '#379cf6' : '#36454F',
+    display: 'block',
+    width: '120px',
+    border: '1px solid gray',
+    color: 'white',
+    alignSelf: 'center',
   };
   const styleRow = {
-    backgroundColor: reserved ? "white" : "#E5E4E2",
+    backgroundColor: reserved ? 'white' : '#E5E4E2',
   };
 
   const dispatch = useDispatch();
-  const [text, setText] = useState("Not a Member");
+  const [text, setText] = useState('Not a Member');
 
   const handleJoin = (e) => {
     e.preventDefault();
     dispatch(joinMission(id));
 
     if (!reserved) {
-      setText("Active Member");
+      setText('Active Member');
     }
   };
   const handleLeave = (e) => {
     e.preventDefault();
     dispatch(leaveMission(id));
     if (reserved) {
-      setText("Not a member");
+      setText('Not a member');
     }
   };
 
@@ -41,7 +43,10 @@ const MissionDetails = ({ name, description, id, reserved }) => {
       <td className={styles.name}>{name}</td>
       <td className={styles.description}>{description}</td>
       <td>
-        <span style={myStatus}> {text}</span>
+        <span style={myStatus}>
+          {' '}
+          {text}
+        </span>
       </td>
       <td>
         {!reserved && (

@@ -1,6 +1,6 @@
-import { useSelector } from "react-redux";
-import Styles from "../styles/Mission.module.css";
-import styles from "../styles/MyProfile.module.css";
+import { useSelector } from 'react-redux';
+import Styles from '../styles/Mission.module.css';
+import styles from '../styles/MyProfile.module.css';
 
 const MyProfile = () => {
   const { missions } = useSelector((store) => store.missions);
