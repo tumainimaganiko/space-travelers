@@ -10,7 +10,7 @@ const MyProfile = () => {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.missions}>
         <h2>My Missions</h2>
         <ul>
           {bookedMission.map((mission) => (
@@ -20,7 +20,7 @@ const MyProfile = () => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className={styles.rockets}>
         <h2>My Rockets</h2>
         <ul>
           {bookedRockets.map((rocket) => (

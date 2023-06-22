@@ -3,15 +3,24 @@
   justify-content: space-between;
   gap: 40px;
   align-items: center;
-  width: 40%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .container ul {
   list-style-type: none;
-  width: 300px;
+  padding: 0;
 }
 
 .container ul li {
   border: 1px solid black;
   padding: 10px 15px;
+}
+
+.missions {
+  width: 50%;
+}
+
+.rockets {
+  width: 50%;
 }
