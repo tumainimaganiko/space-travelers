@@ -15,8 +15,7 @@ td {
   padding: 5px;
 }
 
-th,
-td {
+.name {
   text-align: left;
   vertical-align: top;
   padding: 5px;
@@ -47,6 +46,7 @@ td {
 .profileTable th {
   font-size: 25px;
 }
+
 .profileRow {
   display: block;
   padding: 25px;

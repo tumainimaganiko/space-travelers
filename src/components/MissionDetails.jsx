@@ -7,7 +7,6 @@ import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 const MissionDetails = ({
   name, description, id, reserved,
 }) => {
-  // Styling
   const myStatus = {
     backgroundColor: reserved ? '#379cf6' : '#36454F',
     display: 'block',
@@ -51,22 +50,22 @@ const MissionDetails = ({
       </td>
       <td>
         {!reserved && (
-        <button
-          type="button"
-          className={styles.joinBtn}
-          onClick={handleJoin}
-        >
-          Join Mission
-        </button>
+          <button
+            type="button"
+            className={styles.joinBtn}
+            onClick={handleJoin}
+          >
+            Join Mission
+          </button>
         )}
         {reserved && (
-        <button
-          type="button"
-          className={styles.leaveBtn}
-          onClick={handleLeave}
-        >
-          Leave Mission
-        </button>
+          <button
+            type="button"
+            className={styles.leaveBtn}
+            onClick={handleLeave}
+          >
+            Leave Mission
+          </button>
         )}
       </td>
     </tr>
