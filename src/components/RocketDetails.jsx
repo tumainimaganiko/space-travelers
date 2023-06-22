@@ -41,13 +41,13 @@ const RocketDetails = ({
 
 export default RocketDetails;
 
-RocketDetails.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+RocketDetails.propTypes = PropTypes.shape({
+  name: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.arrayOf(PropTypes.string),
+  id: PropTypes.string,
   reserved: PropTypes.bool,
-  image: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+}).isRequired;
 
 RocketDetails.defaultProps = {
   reserved: false,
