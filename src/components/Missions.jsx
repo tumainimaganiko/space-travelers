@@ -23,15 +23,17 @@ const Missions = () => {
         </tr>
       </thead>
       <tbody>
-        {missions.map((mission) => (
-          <MissionDetails
-            key={uuidv4()}
-            name={mission.mission_name}
-            description={mission.description}
-            id={mission.mission_id}
-            reserved={mission.reserved}
-          />
-        ))}
+        {missions.length > 0 ? (
+          missions.map((mission) => (
+            <MissionDetails
+              key={uuidv4()}
+              name={mission.mission_name}
+              description={mission.description}
+              id={mission.mission_id}
+              reserved={mission.reserved}
+            />
+          ))
+        ) : 'loading'}
       </tbody>
     </table>
   );
