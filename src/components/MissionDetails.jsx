@@ -20,8 +20,6 @@ const MissionDetails = ({
     backgroundColor: reserved ? 'white' : '#E5E4E2',
   };
 
-  //
-
   const dispatch = useDispatch();
   const [text, setText] = useState('Not a Member');
 
@@ -42,47 +40,46 @@ const MissionDetails = ({
   };
 
   return (
-    <tbody>
-      <tr style={styleRow}>
-        <td className={styles.name}>{name}</td>
-        <td className={styles.description}>{description}</td>
-        <td>
-          <span style={myStatus}>
-            {' '}
-            {text}
-          </span>
-        </td>
-        <td>
-          {!reserved && (
-            <button
-              type="button"
-              className={styles.joinBtn}
-              onClick={handleJoin}
-            >
-              Join Mission
-            </button>
-          )}
-          {reserved && (
-            <button
-              type="button"
-              className={styles.leaveBtn}
-              onClick={handleLeave}
-            >
-              Leave Mission
-            </button>
-          )}
-        </td>
-      </tr>
-    </tbody>
+    <tr style={styleRow}>
+      <td className={styles.name}>{name}</td>
+      <td className={styles.description}>{description}</td>
+      <td>
+        <span style={myStatus}>
+          {' '}
+          {text}
+        </span>
+      </td>
+      <td>
+        {!reserved && (
+        <button
+          type="button"
+          className={styles.joinBtn}
+          onClick={handleJoin}
+        >
+          Join Mission
+        </button>
+        )}
+        {reserved && (
+        <button
+          type="button"
+          className={styles.leaveBtn}
+          onClick={handleLeave}
+        >
+          Leave Mission
+        </button>
+        )}
+      </td>
+    </tr>
   );
 };
 
-MissionDetails.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+MissionDetails.propTypes = PropTypes.shape({
+  name: PropTypes.string,
+  description: PropTypes.string,
+  id: PropTypes.string,
   reserved: PropTypes.bool,
-};
+}).isRequired;
+
 MissionDetails.defaultProps = {
   reserved: false,
 };
