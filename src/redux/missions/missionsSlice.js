@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export const fetchMissions = createAsyncThunk(
-  'rockets/fetchRockets',
+  'missions/fetchMissions',
   async () => {
     const response = await axios.get('https://api.spacexdata.com/v3/missions');
     return response.data;
