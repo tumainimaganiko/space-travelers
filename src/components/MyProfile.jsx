@@ -1,6 +1,6 @@
-import { useSelector } from 'react-redux';
-import Styles from '../styles/Mission.module.css';
-import styles from '../styles/MyProfile.module.css';
+import { useSelector } from "react-redux";
+import Styles from "../styles/Mission.module.css";
+import styles from "../styles/MyProfile.module.css";
 
 const MyProfile = () => {
   const { missions } = useSelector((store) => store.missions);
@@ -27,15 +27,14 @@ const MyProfile = () => {
       <div className={styles.rockets}>
         <h2>My Rockets</h2>
         <ul>
-  {bookedRockets.length ? (
-    bookedRockets.map((rocket) => (
-      <li key={rocket.id}>{rocket.name}</li>
-    ))
-  ) : (
-    <p>There are no booked rockets</p>
-  )}
-</ul>
-
+          {bookedRockets.length ? (
+            bookedRockets.map((rocket) => (
+              <li key={rocket.id}>{rocket.name}</li>
+            ))
+          ) : (
+            <p>There are no booked rockets</p>
+          )}
+        </ul>
       </div>
     </>
   );

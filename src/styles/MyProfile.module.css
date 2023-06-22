@@ -1,15 +1,18 @@
-.missions, .rockets {
+.missions,
+.rockets {
   float: left;
   width: 45%;
   margin: 0 2.5%;
 }
 
-.missions ul, .rockets ul {
+.missions ul,
+.rockets ul {
   list-style-type: none;
   padding: 0;
 }
 
-.missions ul li , .rockets ul li {
+.missions ul li,
+.rockets ul li {
   border: 1px solid black;
   padding: 10px 15px;
 }

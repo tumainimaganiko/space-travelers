@@ -1,38 +1,34 @@
-import { NavLink } from 'react-router-dom';
-import Img from '../Images/space-img.png';
-import styles from '../styles/Navbar.module.css';
+import { NavLink } from "react-router-dom";
+import Img from "../Images/space-img.png";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const imgStyle = {
-    width: '40px',
-    height: '40px',
+    width: "40px",
+    height: "40px",
   };
 
   const line = {
-    color: 'black',
-    marginLeft: '10px',
-    width: '0.2em',
+    color: "black",
+    marginLeft: "10px",
+    width: "0.2em",
   };
 
   const activeLink = {
-    textDecoration: 'underline',
-    color: 'blue',
-    fontWeight: '500',
+    textDecoration: "underline",
+    color: "blue",
+    fontWeight: "500",
   };
 
   const link = {
-    textDecoration: 'none',
-    color: 'blue',
-    fontWeight: '500',
+    textDecoration: "none",
+    color: "blue",
+    fontWeight: "500",
   };
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <img
-          src={Img}
-          style={imgStyle}
-          alt="space logo"
-        />
+        <img src={Img} style={imgStyle} alt="space logo" />
         <h1>Space Travelers&apos; Hub</h1>
       </div>
       <ul className={styles.list}>
