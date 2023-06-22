@@ -8,7 +8,7 @@ const Rockets = () => {
   return (
     <div>
       {
-        rockets.length > 0 ? (
+        (rockets && rockets.length > 0) ? (
           rockets.map((item) => (
             <RocketDetails
               key={uuidv4()}

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the Rocket Component Test the rockets data 1`] = `
+<div>
+  loading
+</div>
+`;
