@@ -1,18 +1,18 @@
-import renderer from "react-test-renderer";
-import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
-import MissionDetails from "../components/MissionDetails";
-import myMissions from "./missionsData";
+import renderer from 'react-test-renderer';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import MissionDetails from '../components/MissionDetails';
+import myMissions from './missionsData';
 
 const reducer = (
   state = {
     missions: { missions: myMissions },
-  }
+  },
 ) => state;
 
 const store = configureStore({ reducer });
 
-it("Should render Mission details", () => {
+it('Should render Mission details', () => {
   const tree = renderer
     .create(
       <Provider store={store}>
@@ -22,7 +22,7 @@ it("Should render Mission details", () => {
           id="firstItem"
           reserved
         />
-      </Provider>
+      </Provider>,
     )
     .toJSON();
 
