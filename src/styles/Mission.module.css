@@ -15,8 +15,7 @@ td {
   padding: 5px;
 }
 
-th,
-td {
+.name {
   text-align: left;
   vertical-align: top;
   padding: 5px;

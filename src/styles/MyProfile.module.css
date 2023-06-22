@@ -1,9 +1,14 @@
 .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
   width: 40%;
 }
 
 .container ul {
   list-style-type: none;
+  width: 300px;
 }
 
 .container ul li {
