@@ -8,17 +8,23 @@ const Navbar = () => {
     height: '40px',
   };
 
+  const line = {
+    color: 'black',
+    marginLeft: '10px',
+    width: '0.2em',
+  };
+
   const activeLink = {
     textDecoration: 'underline',
     color: 'blue',
     fontWeight: '500',
-  }
+  };
 
   const link = {
     textDecoration: 'none',
     color: 'blue',
     fontWeight: '500',
-  }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
@@ -32,8 +38,8 @@ const Navbar = () => {
       <ul className={styles.list}>
         <li>
           <NavLink
-            to="/" 
-            style={({isActive}) => isActive ? activeLink : link}
+            to="/"
+            style={({ isActive }) => (isActive ? activeLink : link)}
           >
             Rockets
           </NavLink>
@@ -41,15 +47,16 @@ const Navbar = () => {
         <li>
           <NavLink
             to="missions"
-            style={({isActive}) => isActive ? activeLink : link}
+            style={({ isActive }) => (isActive ? activeLink : link)}
           >
             Missions
           </NavLink>
+          <span style={line}>|</span>
         </li>
         <li>
           <NavLink
             to="myprofile"
-            style={({isActive}) => isActive ? activeLink : link}
+            style={({ isActive }) => (isActive ? activeLink : link)}
           >
             My profile
           </NavLink>
