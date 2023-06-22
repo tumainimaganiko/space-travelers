@@ -12,8 +12,8 @@ exports[`Render a Navigation Bar 1`] = `
       src="space-img.png"
       style={
         Object {
-          "height": "20px",
-          "width": "20px",
+          "height": "40px",
+          "width": "40px",
         }
       }
     />
@@ -30,6 +30,13 @@ exports[`Render a Navigation Bar 1`] = `
         className="active"
         href="/"
         onClick={[Function]}
+        style={
+          Object {
+            "color": "blue",
+            "fontWeight": "500",
+            "textDecoration": "underline",
+          }
+        }
       >
         Rockets
       </a>
@@ -39,15 +46,40 @@ exports[`Render a Navigation Bar 1`] = `
         className=""
         href="/missions"
         onClick={[Function]}
+        style={
+          Object {
+            "color": "blue",
+            "fontWeight": "500",
+            "textDecoration": "none",
+          }
+        }
       >
         Missions
       </a>
+      <span
+        style={
+          Object {
+            "color": "black",
+            "marginLeft": "10px",
+            "width": "0.2em",
+          }
+        }
+      >
+        |
+      </span>
     </li>
     <li>
       <a
         className=""
         href="/myprofile"
         onClick={[Function]}
+        style={
+          Object {
+            "color": "blue",
+            "fontWeight": "500",
+            "textDecoration": "none",
+          }
+        }
       >
         My profile
       </a>
