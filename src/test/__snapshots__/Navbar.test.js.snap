@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render a Navigation Bar 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="heading"
+  >
+    <img
+      alt="space logo"
+      src="space-img.png"
+      style={
+        Object {
+          "height": "20px",
+          "width": "20px",
+        }
+      }
+    />
+    <h1>
+      Space Travelers' Hub
+    </h1>
+  </div>
+  <ul
+    className="list"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="/myprofile"
+        onClick={[Function]}
+      >
+        My profile
+      </a>
+    </li>
+  </ul>
+</div>
+`;
