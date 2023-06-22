@@ -4,8 +4,8 @@ import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   const imgStyle = {
-    width: '20px',
-    height: '20px',
+    width: '40px',
+    height: '40px',
   };
   return (
     <div className={styles.container}>
