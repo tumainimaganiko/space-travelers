@@ -4,19 +4,18 @@ import { Provider } from 'react-redux';
 import MissionDetails from '../components/MissionDetails';
 import myMissions from './missionsData';
 
-
 const reducer = (state = {
-    missions: { missions: myMissions },
-  }) => state;
+  missions: { missions: myMissions },
+}) => state;
 
-  const store = configureStore({ reducer });
+const store = configureStore({ reducer });
 
 it('Should render Mission details', () => {
-    const tree = renderer.create(
-        <Provider store={store}>
-        <MissionDetails name={'space 1'} description={'first space'} id={'firstItem'} reserved />
-        </Provider>
-    ).toJSON();
+  const tree = renderer.create(
+    <Provider store={store}>
+      <MissionDetails name="space 1" description="first space" id="firstItem" reserved />
+    </Provider>,
+  ).toJSON();
 
-    expect(tree).toMatchSnapshot();
-})
+  expect(tree).toMatchSnapshot();
+});
