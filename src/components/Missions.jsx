@@ -1,17 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchMissions } from '../redux/missions/missionsSlice';
 import MissionDetails from './MissionDetails';
 import Styles from '../styles/Mission.module.css';
 
 const Missions = () => {
   const { missions } = useSelector((store) => store.missions);
-
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
 
   return (
     <table className={Styles.missionTable}>
