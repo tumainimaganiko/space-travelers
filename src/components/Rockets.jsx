@@ -1,15 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import RocketDetails from './RocketDetails';
-import { fetchRockets } from '../redux/rockets/rocketsSlice';
 
 const Rockets = () => {
   const { rockets } = useSelector((store) => store.rockets);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
 
   return (
     <div>
