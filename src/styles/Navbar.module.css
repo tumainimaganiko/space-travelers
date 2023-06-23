@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin: 1% 4%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.list li {
+  padding: 10px;
+}

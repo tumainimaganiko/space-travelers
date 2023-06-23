@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Mission details 1`] = `
+<tr
+  style={
+    Object {
+      "backgroundColor": "white",
+    }
+  }
+>
+  <td
+    className="name"
+  >
+    space 1
+  </td>
+  <td
+    className="description"
+  >
+    first space
+  </td>
+  <td>
+    <span
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#379cf6",
+          "border": "1px solid gray",
+          "color": "white",
+          "display": "block",
+          "width": "120px",
+        }
+      }
+    >
+       
+      Not a Member
+    </span>
+  </td>
+  <td>
+    <button
+      className="leaveBtn"
+      onClick={[Function]}
+      type="button"
+    >
+      Leave Mission
+    </button>
+  </td>
+</tr>
+`;

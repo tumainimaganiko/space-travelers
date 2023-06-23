@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test MyProfile component shouls show reserved Rockets and Missions 1`] = `
+Array [
+  <div
+    className="missions"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <ul>
+      <p>
+        There are no booked missions
+      </p>
+    </ul>
+  </div>,
+  <div
+    className="rockets"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul>
+      <p>
+        There are no booked rockets
+      </p>
+    </ul>
+  </div>,
+]
+`;
